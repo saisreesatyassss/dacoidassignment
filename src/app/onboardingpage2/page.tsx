@@ -1,18 +1,18 @@
-
 "use client"
+
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
-// Other imports and component code...
+const OnboardingPage2: React.FC = () => {
 
-
-const OnboardingPage1: React.FC = () => {
   const router = useRouter();
 
 const handleButtonClick = () => {
-  router.push('/onboardingpage2');
+  router.push('/createaccount');
 };
+
+
   const [name, setName] = useState('');
 
   const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -32,10 +32,10 @@ const handleButtonClick = () => {
         </a>
       </div>
 
-      <div className="flex justify-center items-center py-12">
+      <div className="flex justify-center items-center py-16">
         <div className="relative overflow-hidden">
           <Image
-            src="/img2.png"
+            src="/img1.png"
             alt="Your Image"
             width={282}
             height={282}
@@ -44,10 +44,9 @@ const handleButtonClick = () => {
       </div>
 
       <div className="pl-8 text-left py-8">
-        <h1 className="text-2xl font-bold mb-4">Track Your Goal</h1>
+        <h1 className="text-2xl font-bold mb-4">Get Burn</h1>
         <p className="text-lg text-gray-500">
-          Don t worry if you have trouble determining your goals. We can help you
-          determine your goals and track your goals.
+          Let’s keep burning to achieve your goals, it hurts only temporarily, if you give up now you will be in pain forever
         </p>
       </div>
 
@@ -63,4 +62,4 @@ const handleButtonClick = () => {
   );
 };
 
-export default OnboardingPage1;
+export default OnboardingPage2;
