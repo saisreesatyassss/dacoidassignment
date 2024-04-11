@@ -10,10 +10,10 @@ export default function Home() {
     <main className=" ">
       <div className=" ">
         {/* Include the OnboardingPage1 component */}
-        {/* <OnboardingPage1 /> */}
+        <OnboardingPage1 />
         {/* <OnboardingPage2 /> */}
         {/* <CreateAccount/> */}
-        <SignIn/>
+        {/* <SignIn/> */}
       </div>
     </main>
   );
