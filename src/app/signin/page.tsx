@@ -9,7 +9,7 @@ const SignIn: React.FC = () => {
     const router = useRouter();
 
 const handleButtonClick = () => {
-  router.push('/workouttracker');
+  router.push('/goals');
 };
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
