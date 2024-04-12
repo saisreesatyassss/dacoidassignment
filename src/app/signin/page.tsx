@@ -2,8 +2,15 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const SignIn: React.FC = () => {
+  
+    const router = useRouter();
+
+const handleButtonClick = () => {
+  router.push('/workouttracker');
+};
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [agreeTerms, setAgreeTerms] = useState(false);
@@ -74,7 +81,8 @@ const SignIn: React.FC = () => {
          <p className="mt-4 text-sm text-gray-500 underline">Forgot your password?</p>
 
         </div>
-        <button type="submit" className="w-full bg-gradient-to-r from-blue-300 to-blue-400 text-white px-6 py-3 rounded-lg shadow-md hover:from-blue-600 hover:to-blue-700">
+        <button   onClick={handleButtonClick}
+ type="submit" className="w-full bg-gradient-to-r from-blue-300 to-blue-400 text-white px-6 py-3 rounded-lg shadow-md hover:from-blue-600 hover:to-blue-700">
           Sign In
         </button>
       </form>

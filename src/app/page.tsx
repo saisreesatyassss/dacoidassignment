@@ -4,6 +4,8 @@ import OnboardingPage1 from './onboardingpage1/page'; // Assuming OnboardingPage
 import CreateAccount from './createaccount/page';
 import OnboardingPage2 from './onboardingpage2/page';
 import SignIn from './signin/page';
+import Navigation from './workouttracker/navbar';
+import WorkoutTrackerPage from './workouttracker/page';
 
 export default function Home() {
   return (
@@ -14,7 +16,8 @@ export default function Home() {
         {/* <OnboardingPage2 /> */}
         {/* <CreateAccount/> */}
         {/* <SignIn/> */}
-      </div>
+        {/* <WorkoutTrackerPage/> */}
+       </div>
     </main>
   );
 }

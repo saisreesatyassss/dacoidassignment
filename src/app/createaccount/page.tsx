@@ -51,7 +51,7 @@ const handleButtonClick = () => {
   };
 
   return (
-    <div className="w-full  max-w-md mx-auto p-8 bg-white rounded-lg shadow-lg">
+    <div className="w-full h-full max-w-md mx-auto p-8 bg-white rounded-lg shadow-lg">
       <div className="text-start mb-8">
         <h2 className="text-2xl font-bold text-gray-700">Create an Account</h2>
       </div>
@@ -100,7 +100,7 @@ const handleButtonClick = () => {
             required
           />
         </div>
-        <div className="  mb-10">
+        <div className="  mb-8">
           <label htmlFor="agreeTerms" className="flex items-center">
             <input
               type="checkbox"
