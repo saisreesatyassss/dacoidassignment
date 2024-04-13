@@ -34,7 +34,7 @@ const handleButtonClick = () => {
 
   return (
     <div className="container mx-auto">
-      <h1 className="text-3xl font-bold my-8">What are your goals?</h1>
+      <h1 className="text-xl font-bold my-8 mx-4 pl-16">What are your goals?</h1>
 <div className="p-2  gap-4">
         {Object.keys(goals).map((goal) => (
           <div key={goal} className="flex items-center gap-2 m-4 bg-gray-200 rounded-xl p-4 shadow-md">
@@ -49,7 +49,7 @@ const handleButtonClick = () => {
         ))}
       </div>
        <button   onClick={handleButtonClick}
- type="submit" className="w-full bg-gradient-to-r from-blue-300 to-blue-400 text-white px-6 py-3 rounded-lg shadow-md hover:from-blue-600 hover:to-blue-700">
+ type="submit" className="w-4/5 m-8 bg-gradient-to-r from-blue-300 to-blue-400 text-white px-6 py-3  rounded-lg shadow-md hover:from-blue-600 hover:to-blue-700">
 Confirm        </button>
     </div>
   );
